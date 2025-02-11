@@ -1,7 +1,5 @@
 # Análise estatística de uma base de dados sobre diabetes
 
-![imagem](imagens/imagem_ilustrativa.jpg)
-
 No projeto, utilizei ferramentas estatísticas para explorar e analisar uma base de dados sobre diabetes, com o objetivo de identificar padrões e insights relevantes relacionados à condição. O trabalho foi dividido em três etapas principais: exploração dos dados, testes estatísticos, modelagem e visualização.
 
 ## Organização do projeto
