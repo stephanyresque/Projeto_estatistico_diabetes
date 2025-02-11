@@ -215,3 +215,10 @@ def analise_kruskal(
         print(f"Não rejeita a hipótese nula (valor p: {valor_p_kru=:.3f})")
     else:
         print(f"Rejeita a hipótese nula (valor p: {valor_p_kru=:.3f})")
+
+def remove_outliers(dados, largura_bigodes=1.5):
+    q1 = dados.quantile(0.25)
+    q3 = dados.quantile(0.75)
+    iqr = q3 - q1
+
+    return dados[(dados >= q1 - largura_bigodes*iqr)&(dados <= q3 + largura_bigodes*iqr)]
